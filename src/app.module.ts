@@ -12,6 +12,8 @@ import { PublisherModule } from './publisher/publisher.module'
 import { ReviewModule } from './review/review.module'
 import { BooksController } from './controllers/book/book.controller'
 import { AuthorsController } from './controllers/authors/authors.controller'
+import { UsersModule } from './users/users.module'
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -34,7 +36,9 @@ import { AuthorsController } from './controllers/authors/authors.controller'
     AuthorModule,
     BookModule,
     PublisherModule,
-    ReviewModule
+    ReviewModule,
+    UsersModule,
+    AuthModule
   ],
   controllers: [BooksController, AuthorsController]
 })

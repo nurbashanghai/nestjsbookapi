@@ -8,9 +8,11 @@ import {
   OneToMany,
   Entity
 } from 'typeorm'
+
 import { AuthorEntity } from '../author/author.entity'
 import { PublisherEntity } from '../publisher/publisher.entity'
 import { ReviewEntity } from '../review/review.entity'
+import { UserEntity } from 'src/users/users.entity'
 
 @Entity({ name: 'book' })
 export class BookEntity extends BaseEntity {
@@ -28,6 +30,9 @@ export class BookEntity extends BaseEntity {
 
   @Column('date')
   publishedDate!: Date
+
+  @ManyToOne(type => UserEntity, user => user.books)
+  user: UserEntity;
 
   @ManyToOne(
     type => AuthorEntity,
