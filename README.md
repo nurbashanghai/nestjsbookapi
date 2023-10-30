@@ -8,10 +8,7 @@
   - [Installation](#installation)
 - [Usage](#usage)
   - [Running the Application](#running-the-application)
-  - [Testing](#testing)
   - [Seeding Data](#seeding-data)
-- [Deployment](#deployment)
-- [License](#license)
 
 ## Overview
 
