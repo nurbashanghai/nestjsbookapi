@@ -41,7 +41,11 @@ Install project dependencies:
 
 bash
 Copy code
+
+```
 npm install
+```
+
 If you plan to use a local database, ensure it's installed and configured in the ormconfig.json file. You can use PostgreSQL, MySQL, or other supported databases.
 
 Usage
@@ -50,26 +54,20 @@ To start the development server:
 
 bash
 Copy code
+
+```
 npm run start:dev
+```
+
 The application will be available at http://localhost:3000 by default. You can access the GraphQL Playground at http://localhost:3000/graphql.
 
-Testing
-To run tests:
-
 bash
 Copy code
-npm test
-To generate a coverage report:
 
-bash
-Copy code
-npm run test:cov
-Seeding Data
-You can seed the database with sample data using:
-
-bash
-Copy code
+```
 npm run seed
+```
+
 This is useful for testing and populating the database with initial records.
 
 Deployment
@@ -79,17 +77,18 @@ Build the project:
 
 bash
 Copy code
+
+```
 npm run build
+```
+
 Set up your production database and update the ormconfig.json file accordingly.
 
 Start the application:
 
 bash
 Copy code
+
+```
 npm run start:prod
-Make sure to configure a reverse proxy (e.g., Nginx) and a process manager (e.g., PM2) for production deployment.
-
-License
-This project is licensed under the UNLICENSED license.
-
-csharp
+```
